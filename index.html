@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meeting Minutes</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Epic Meeting Notes</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="#first">First step</a></li>
+                    <li><a href="#second">Second step</a></li>
+                    <li><a href="#third">Third step</a></li>
+                    <li><a href="#fourth">Fourth step</a></li>
+                    <li><a href="#fifth">Fifth step</a></li>
+                    <li><a href="#sixth">Sixth step</a></li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <section> 
+            <h2>Meeting 1: Discussing the meaning of life</h2>
+            <div>04/15/2025</div>
+            
+            <br />
+
+            <div>Attendance list:</div>
+            <ul>
+                <li>Me</li>
+                <li>Batman</li>
+                <li>Spiderman</li>
+                <li>Homer Simpson</li>
+                <li>Genghis Khan</li>
+            </ul>
+
+            <br />
+
+            <div>Agenda:</div>
+            <ol>
+                <li>Text content</li>
+                <li>Lists</li>
+                <li>Text semantics</li>
+                <li>Images and multimedia</li>
+                <li>Details/Summary</li>
+                <li>Forms</li>
+            </ol>
+        </section>
+
+        <main>
+
+            <br /><br /><br />
+
+            <h3 id="first">First step: Text content</h3>
+            <div> 
+                <p>
+                    This is an example of &lt;div&gt; and <span>&lt;span&gt;</span>
+                    (I don't really know what they're for 😅)
+                </p>
+            </div>
+
+            <hr />
+
+            <h3 id="second">Second step: Make an ordered list</h3>
+            <ol>
+                <li>This</li>
+                <li>is</li>
+                <li>an</li>
+                <li>ordered</li>
+                <li>list</li>
+                <li>wow</li>
+            </ol>
+
+            <hr />
+
+            <h3 id="third">Third step: Text semantic stuff</h3>
+            <p>
+                Bring <b>attention</b> to text using &lt;b&gt; but it isn't necessarily more important
+                <br />
+                This <strong>text</strong> created using &lt;strong&gt;, however, is more important
+                <br />
+                &lt;i&gt; <i>italicizes</i> something, while &lt;em&gt; is used to <em>stress</em>
+                something
+            </p>
+
+            <hr />
+
+            <h3 id="fourth">Fourth step: Image and video</h3>
+
+            <img
+            src="android-chrome-512x512.png"
+            alt="heart emoji"
+            />
+
+            <br />
+
+            <h4>Chill music to study to</h4>
+            <audio controls src="Xion 1.mp3"></audio>
+
+            <br />
+            
+            <h4>Random video</h4>
+            <video controls src="Mohg, the Omen.mp4" width="800"></video>
+
+            <hr />
+
+            <h3 id="fifth">Fifth step: Details/Summary</h3>
+
+            <details>
+                <summary>Stuff</summary>
+                <p>
+                    Hello I am a human
+                </p>
+            </details>
+
+            <details>
+                <summary>Things</summary>
+                <p>
+                    Or am I
+                </p>
+            </details>
+
+            <details>
+                <summary>Blah</summary>
+                <p>
+                    blah blah blah
+                </p>
+            </details>
+
+            <hr />
+
+            <h3 id="sixth">Sixth step: Forms</h3>
+
+            <form>
+                <fieldset>
+                    <legend>Random form</legend>
+            
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" /><br><br>
+            
+                    <label for="birthdate">Birthdate:</label>
+                    <input type="date" id="birthdate" name="birthdate" /><br><br>
+            
+                    <p>Choose one:</p>
+                    <input type="radio" id="cat" name="pet" value="cat">
+                    <label for="cat">Cat</label>
+                    <input type="radio" id="dog" name="pet" value="dog">
+                    <label for="dog">Dog</label><br><br>
+            
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Sell your soul to me?</label><br><br>
+            
+                    <label for="comments">Comments:</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="30"></textarea><br><br>
+            
+                    <label for="animal">Favorite animal:</label>
+                    <input list="animals" id="animal" name="animal">
+                    <datalist id="animals">
+                        <option value="Human">
+                        <option value="Dog">
+                        <option value="Cat">
+                        <option value="Dinosaur">
+                    </datalist><br><br>
+            
+                    <label for="country">Pick a country:</label>
+                    <select id="country" name="country">
+                        <option value="usa">USA</option>
+                        <option value="china">China</option>
+                        <option value="russia">Russia</option>
+                    </select><br><br>
+            
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+
+        </main>
+
+        <footer>
+
+            <br><br>
+            <div>&copy; Batman</div>
+
+        </footer>
+
+    </body>
+</html>
