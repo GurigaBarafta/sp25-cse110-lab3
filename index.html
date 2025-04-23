@@ -5,11 +5,27 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Meeting Minutes</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Griffy&display=swap" rel="stylesheet">
+
         <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <link rel="manifest" href="site.webmanifest">
+
+        <link rel="stylesheet" href="meeting_style.css">
+
+        <style>
+
+            h1 {
+              color: maroon;
+              margin-left: 20px;
+            }
+
+        </style>
 
     </head>
 
@@ -19,7 +35,7 @@
             <h1>Epic Meeting Notes</h1>
 
             <nav>
-                <ul>
+                <ul class="flex" style="list-style-type: none;">
                     <li><a href="#first">First step</a></li>
                     <li><a href="#second">Second step</a></li>
                     <li><a href="#third">Third step</a></li>
@@ -32,27 +48,27 @@
         </header>
 
         <section> 
-            <h2>Meeting 1: Discussing the meaning of life</h2>
-            <div>04/15/2025</div>
+            <h2 class="griffy-regular">Meeting 1: Discussing the meaning of life</h2>
+            <div class="highlight" style="margin: 20px; padding: 0;">04/15/2025</div>
             
             <br />
 
             <div>Attendance list:</div>
-            <ul>
+            <ul class="grid">
                 <li>Me</li>
-                <li>Batman</li>
+                <li id="manbat">Batman</li>
                 <li>Spiderman</li>
-                <li>Homer Simpson</li>
+                <li id="huh">Homer Simpson</li>
                 <li>Genghis Khan</li>
             </ul>
 
             <br />
 
-            <div>Agenda:</div>
+            <div class="cat">Agenda:</div>
             <ol>
-                <li>Text content</li>
+                <li class="highlight">Text content</li>
                 <li>Lists</li>
-                <li>Text semantics</li>
+                <li class="cat dog">Text semantics</li>
                 <li>Images and multimedia</li>
                 <li>Details/Summary</li>
                 <li>Forms</li>
@@ -61,7 +77,7 @@
 
         <main>
 
-            <br /><br /><br />
+            <br />
 
             <h3 id="first">First step: Text content</h3>
             <div> 
@@ -153,7 +169,7 @@
                     <label for="birthdate">Birthdate:</label>
                     <input type="date" id="birthdate" name="birthdate" /><br><br>
             
-                    <p>Choose one:</p>
+                    <p style="all: revert;">Choose one:</p>
                     <input type="radio" id="cat" name="pet" value="cat">
                     <label for="cat">Cat</label>
                     <input type="radio" id="dog" name="pet" value="dog">
