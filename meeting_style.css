@@ -58,10 +58,11 @@ p {
     border-color: black;
 
     max-width: 400px;
-    min-width: none;
+    min-width: 0;
 }
 
 ol {
+    color: blue;
     color: color(display-p3 0 0 1);
 
     margin: auto;
