@@ -1,0 +1,224 @@
+/*sets background color for site*/
+body {
+    background-color: rgba(214, 211, 211, 0.553);
+}
+
+ul {
+    color: #e81313;
+
+    margin-top: 10px;
+    margin-right: 2em;
+    margin-bottom: 20px;
+    margin-left: 2em;
+
+    padding-top: 0;
+    padding-right: 2em;
+    padding-bottom: 0;
+    padding-left: 2em;
+
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.grid {
+    display: grid;
+    justify-self: center;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+h2 {
+    color: hsl(20, 50%, 50%);
+
+    border: 2px solid rebeccapurple;
+    padding: 0.5em;
+    margin: 20px;
+
+    text-decoration: underline purple;
+    text-align: center;
+
+    display: block;
+    position: static;
+
+}
+
+p {
+    color: black;
+    width: 350px;
+    height: 6em;
+    margin: 10px 5px 10px 5px;
+    padding: 25px 10px 25px 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+
+    max-width: 400px;
+    min-width: none;
+}
+
+ol {
+    color: color(display-p3 0 0 1);
+
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 2em;
+    width: 350px;
+
+    border-top: 3px solid #000;
+    border-left: 3px solid #000;
+    border-right: 3px solid #000;
+    border-bottom: 3px solid #000;
+
+    border-radius: 10px;
+
+
+}
+
+h3 {
+    /*css variable*/
+    --some-blue: #1e90ff;
+
+    /*fallback color below*/
+    color: var(--some-blue, #000);
+    
+    color: color-mix(in display-p3, red 30%, blue 70%);
+
+
+}
+
+h4 {
+    display: inline;
+
+    padding-right: 100px;
+
+    position: relative;
+
+    bottom: 20px;
+
+    left: 20px;
+
+}
+
+a:hover,
+#manbat:hover {
+    background-color: gold;
+}
+
+button:active {
+    color: red;
+}
+
+.griffy-regular {
+    font-family: "Griffy", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+div.highlight {
+    background-color: yellow;
+}
+
+li.highlight {
+    background-color: aqua;
+}
+
+.cat {
+    font-family: "Griffy", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cat.dog {
+    background-color: chartreuse;
+}
+
+#huh {
+    color: yellow;
+    background-color: gray;
+
+    max-width: fit-content;
+}
+
+li[id="huh"] {
+
+    position: relative;
+
+    left: 20px;
+
+}
+
+p span {
+    background-color: aliceblue;
+}
+
+div > p {
+    color: darkorange;
+}
+
+h2 + div {
+    color: rgb(42, 165, 52);
+}
+
+h2 ~ img {
+    margin: auto;
+}
+
+ul > li[id="manbat"] {
+    font-size: large;
+}
+
+br:has(+ h4) {
+    margin: 20px;
+}
+
+button {
+    color: darksalmon;
+    &:hover {
+      background-color: blueviolet;
+    }
+  }
+  
+
+@media (max-width: 480px){
+
+    * {
+        margin: auto;
+    }
+
+    #huh {
+        position: static;
+    }
+
+    ol {
+
+        max-width: fit-content;
+        padding: 20px;
+
+    }
+
+    p {
+        max-width: fit-content;
+
+    }
+
+    img {
+        max-width: 300px;
+    }
+
+    video {
+        max-width: 300px;
+    }
+
+    h4 {
+        position: static;
+    }
+
+}
+
+
